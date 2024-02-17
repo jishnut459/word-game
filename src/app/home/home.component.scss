@@ -1,0 +1,31 @@
+input {
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+}
+.container {
+  display: flex;
+  gap: 4px;
+  margin-top: 20px;
+}
+.btn {
+  cursor: pointer;
+  padding: 8px;
+  background-color: rgb(101, 117, 201);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(57, 80, 184);
+  }
+}

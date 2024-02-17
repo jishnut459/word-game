@@ -1,0 +1,8 @@
+<h1>GUESS THE WORD</h1>
+<button class="btn" (click)="startGame()">Start</button>
+<div *ngIf="gameStarted" class="container">
+    <div *ngFor="let char of selectedWord; let i = index">
+        <input type="text" [(ngModel)]="inputValues[i]" [style.background-color]="feedback[i]"
+            (input)="checkInput(i, inputValues[i])" maxlength="1">
+    </div>
+</div>
